@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: redis-springcloud2-example
+server:
+  port: 1112
+eureka:
+  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+  instance:
+    preferIpAddress:true    
+   #集群需要配置为true，默认为true，故可不设置
+
+
+
+
+
+
