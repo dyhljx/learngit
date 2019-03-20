@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-eureka
+#  profiles: peer1
+server:
+  port: 1001
+eureka:
+#  instance:
+#    hostname: peer1
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+   #集群需要配置为true，默认为true，故可不设置
+
+
+
